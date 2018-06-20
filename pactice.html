@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practice</title>
+</head>
+<body>
+	<h1>Hello world</h1>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		const displayInfo = (holder, ageInYears = '35') =>{
+			console.log(name);
+			$('h1').text(name + '' + ageInYears );
+		};
+
+		const getInfo = () =>{
+			const name = prompt(`What is your name?`);
+			const age = prompt(`whats your age?`);
+			console.log(name);
+			displayInfo(name, age);
+		};
+
+
+		$(function () {
+			// body...
+			const greeting = 'Hello there';
+			displayInfo(greeting);
+			getInfo();
+		});
+
+	</script>
+</body>
+</html>
